@@ -1,15 +1,10 @@
 kind: pipeline
 name: default
 
-steps:
-- name: frontend
-  image: node
-  commands:
-  - npm install
-  - npm test
-
-- name: backend
+build:
   image: golang
   commands:
-  - go build
-  - go test
+  - cd ./go
+  - go build -o hello
+  - chmod +x hello
+  - ./hello
