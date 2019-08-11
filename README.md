@@ -5,3 +5,4 @@ Latest status:
 for running drone
 Remember to change webhook 
 and SSL proto
+for multimachine
