@@ -1,8 +1,10 @@
 kind: pipeline
 name: default
 
-steps:
-  - name: backend
-    image: golang
-    commands:
-      - go build
+build:
+  image: golang
+  commands:
+  - cd ./go
+  - go build -o hello
+  - chmod +x hello
+  - ./hello
