@@ -4,3 +4,4 @@ Latest status:
 # sample-drone-project
 for running drone
 Remember to change webhook 
+and SSL proto
